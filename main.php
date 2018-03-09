@@ -8,7 +8,7 @@
 
 $isHashHost = false;
 $hostNumber = 4;
-$packImages = false;
+$packImages = true;
 
 spl_autoload_register(function ($class) {
     $class = strtolower($class);
