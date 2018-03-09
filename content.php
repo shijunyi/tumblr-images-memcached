@@ -134,7 +134,7 @@ EOD;
         require_once('zip.lib.php');
         $zip = new ZipFile();
 
-        $zip->addFile($htmlStr, $fileName ?: date('Y-M-j-D-G-i-s') . '.htm');
+        $zip->addFile($htmlStr, $fileName ?: date('Y-m-d-H-i-s') . '.htm');
 
         if ($readmeText)
             $zip->addFile($readmeText, 'readme.txt');
